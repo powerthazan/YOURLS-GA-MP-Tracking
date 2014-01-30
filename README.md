@@ -40,5 +40,3 @@ Keep in Touch with me on&nbsp;<a href="https://twitter.com/powerthazan" target="
 <!-- End Piwik -->
 
 [![Analytics](http://track.tamilcc.com/piwik/piwik.php?idsite=14&amp;rec=1)](https://github.com/powerthazan/YOURLS-GA-MP-Tracking)
-
-{<img src="http://track.tamilcc.com/piwik/piwik.php?idsite=14&amp;rec=1" />}[https://github.com/powerthazan/YOURLS-GA-MP-Tracking]
