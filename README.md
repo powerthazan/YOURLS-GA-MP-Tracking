@@ -38,3 +38,5 @@ Keep in Touch with me on&nbsp;<a href="https://twitter.com/powerthazan" target="
 <!-- Piwik Image Tracker -->
 <img src="http://track.tamilcc.com/piwik/piwik.php?idsite=14&amp;rec=1" style="border:0" alt="" />
 <!-- End Piwik -->
+
+[![Analytics](http://track.tamilcc.com/piwik/piwik.php?idsite=14&amp;rec=1)](https://github.com/powerthazan/YOURLS-GA-MP-Tracking)
