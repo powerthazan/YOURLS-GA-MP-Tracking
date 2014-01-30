@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: GA-Measurement-Protocol
-Plugin URI: https://ge1.me/yourls-ga
+Plugin URI: https://github.com/powerthazan/YOURS-GA-MP-Tracking
 Description: Tracks clicks using Google Analytics Measurement Protocol.
 Version: 0.1
 Author: Powerthazan
