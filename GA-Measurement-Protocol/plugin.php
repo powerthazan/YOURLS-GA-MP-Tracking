@@ -18,6 +18,21 @@ function power_ga_mp_trackCurrent($unused) {
     return $unused;
 }
 
+// Handle the retrieval of the GA Measurment Protocol via curl instead of file_get_contents
+function file_get_contents_curl($url) {
+    $ch = curl_init();
+
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+
+    // Don't bother checking the peer. This may imply a MIM can happen though...
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($ch);
+
+    curl_close($ch);
+    return $response;
+}
 
 // Handle the parsing of the _ga cookie or setting it to a unique identifier
   function power_ga_mp_gaParseCookie() {
@@ -65,7 +80,7 @@ function power_ga_mp($keyword, $title = '(unknown)', $referer = '') {
         $getString = 'https://ssl.google-analytics.com/collect';
         $getString .= '?payload_data&';
         $getString .= http_build_query($data);
-        $result = file_get_contents($getString);
+        $result = file_get_contents_curl($getString);
         return $result;
 	
     }
