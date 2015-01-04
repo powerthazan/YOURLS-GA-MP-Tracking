@@ -28,6 +28,10 @@ I've planned to use Google Event tracking for deep YOURLS click tracking in futu
 <li>Please use Universal GA property. It is only support to Measurement protocol.</li>
 </ul>
 </div>
+
+<h5>Note</h5>
+Now Google Analytics shows  <b>Missing Tracking Code Page "yourShortUrl.com" for property "Custom Property" is missing valid tracking code</b> You can ignore this message. 
+
 <div>
 Keep in Touch with me on&nbsp;<a href="https://twitter.com/powerthazan" target="_blank">@powerthazan</a></div>
 
