@@ -42,8 +42,7 @@ Keep in Touch with me on&nbsp;<a href="https://twitter.com/powerthazan" target="
 <h4>Version 1.1</h4>
 Now, Real Time visitor location track-able.
 There was no way to pass the end-user's IP or Geolocation (derived by GA from IP) neither through that or through the measurement protocol when I started to develop this plugin.
-The source of the traffic arriving to the short url domain is now availble in Reports. 
 
 But their is no way to pass user Geolocation directly to GA-MP  at this stage.
 
-Now Google Add uip paramater for IP Override. It is helping to determine user location from GA End point.
+Now Google Add uip paramater for IP Override. It is helping to determine user location from GA End point. The source of the traffic arriving to the short url domain is now availble in Reports.
