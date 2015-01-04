@@ -60,19 +60,22 @@ function file_get_contents_curl($url) {
 function power_ga_mp($keyword, $title = '(unknown)', $referer = '') { 
 
     $version = 1;
-	$power_ga_mp_GAID = 'UA-43862376-6';
+    $z = rand(100000000000,999999999999); // Cache Buster  to ensure browsers and proxies don't cache hits
+    $power_ga_mp_GAID = 'UA-33563207-5';
    
   $data = array(
             'v' => $version,
             'tid' => $power_ga_mp_GAID,
             'cid' => power_ga_mp_gaParseCookie(),
+            'uip' => $_SERVER['REMOTE_ADDR'],
+            'z' => $z,
             't' => 'pageview',
-		    'dh' => $_SERVER['SERVER_NAME'],
+            'dh' => $_SERVER['SERVER_NAME'],
             'dp' => $keyword,
             'dt' => $title,
             'dr' => $referer,
-			'ec' => $keyword,
-			'ea' => $_SERVER['REMOTE_ADDR'],
+            'ec' => $keyword,
+            'ea' => $_SERVER['REMOTE_ADDR'],
         );
 
 
