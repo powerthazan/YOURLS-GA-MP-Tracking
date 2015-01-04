@@ -3,7 +3,7 @@
 Plugin Name: GA-Measurement-Protocol
 Plugin URI: https://github.com/powerthazan/YOURS-GA-MP-Tracking
 Description: Tracks clicks using Google Analytics Measurement Protocol.
-Version: 0.1
+Version: 1.1
 Author: Powerthazan
 Author URI: https://www.twitter.com/powerthazan
 License: Creative Commons Attribution 3.0 Unported: https://creativecommons.org/licenses/by/3.0/
