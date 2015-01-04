@@ -33,10 +33,5 @@ Keep in Touch with me on&nbsp;<a href="https://twitter.com/powerthazan" target="
 
 <ul>
 <li>Browse more YOURS plugins <a href="https://github.com/YOURLS/YOURLS/wiki/Plugin-List" target="_blank">here</a></li>
-<li>My Thanks to&nbsp;<a href="https://bitbucket.org/fnkr/yourls-ga" target="_blank">FNKR</a>&nbsp;for his UUID creation Idea</li>
 </ul>
-<!-- Piwik Image Tracker -->
-<img src="http://track.tamilcc.com/piwik/piwik.php?idsite=14&amp;rec=1" style="border:0" alt="" />
-<!-- End Piwik -->
 
-[![Analytics](http://track.tamilcc.com/piwik/piwik.php?idsite=14&amp;rec=1)](https://github.com/powerthazan/YOURLS-GA-MP-Tracking)
