@@ -74,8 +74,6 @@ function power_ga_mp($keyword, $title = '(unknown)', $referer = '') {
             'dp' => $keyword,
             'dt' => $title,
             'dr' => $referer,
-            'ec' => $keyword,
-            'ea' => $_SERVER['REMOTE_ADDR'],
         );
 
 
