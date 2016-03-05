@@ -3,45 +3,30 @@ YOURLS-GA-MP-Tracking
 
 Track YOURLS link clicks with Google Analytics Measurement protocol in Real Time
 
-YOURLS.org is the best custom URL shortner script in PHP. YOURLS has many useful plugins. I've built this plugin to track link clicks in real time with Google Analytics. There are already few plugins available for this purpose. Unfortunately  they are not working. So I've build my own. It is working perfectly. 
+YOURLS.org is the best custom URL shortener script in PHP. YOURLS has many useful plugins. I've built this plugin to track link clicks in real time with Google Analytics. There are already a few plugins available for this purpose, but unfortunately they are not working. So I've built my own. It is working perfectly.
 
-<h3>
- Start Up </h3>
-<ul>
-<li>Create New Account Property in Google Analytics - Universal Analytic (Important)&nbsp;</li>
-<li>Get Tracking ID (Eg: UA-43862376-6)&nbsp;</li>
-<li>Download <i>YOURS-GA-MP-Tracking.zip</i>, extract it  and replace your GA Tracking code on line 48 (<b>$power_ga_mp_GAID</b>) in plugin.php</li>
-<li>Upload&nbsp;<b>GA-Measurement-Protocol</b> folder to /user/plugins/ path. (html/YOURLS INSTALL PATH/user/plugins/)</li>
-<li>Go to manage plugins in your YOURLS Admin interface and Activate it.</li>
-</ul>
-<div>
-Now short &amp; share a link and watch clicks in Google Real Time reporting!&nbsp;</div>
-<div>
-</div>
-<div>
-I've planned to use Google Event tracking for deep YOURLS click tracking in future (Eg: Track User IP, Click counts, Redirect time and more)</div>
-<div>
-</div>
-<div>
-<ul>
-<li>I've used "pre_redirect" function for track every click.&nbsp;</li>
-<li>Please use Universal GA property. It is only support to Measurement protocol.</li>
-</ul>
-</div>
+### Start Up ###
+* Create New Account Property in Google Analytics - Universal Analytics (important, but should be the default as of March 2016)
+* Get Tracking ID (e.g. `UA-43862376-6`)
+* Download `YOURLS-GA-MP-Tracking.zip`, extract it, and replace your GA Tracking code on line 48 (`$power_ga_mp_GAID`) in `plugin.php`
+* Upload `GA-Measurement-Protocol` folder to YOURLS `user/plugins/` path (`html/YOURLS_INSTALL_PATH/user/plugins/`)
+* Go to manage plugins in your YOURLS Admin interface and Activate it
 
-<h5>Note</h5>
-Now Google Analytics shows  <b>Missing Tracking Code Page "yourShortUrl.com" for property "Custom Property" is missing valid tracking code</b> You can ignore this message. 
+Now shorten & share a link and watch clicks in Google Real Time reporting!
 
-<div>
-Keep in Touch with me on&nbsp;<a href="https://twitter.com/powerthazan" target="_blank">@powerthazan</a></div>
+I plan to use Google Event Tracking for deep YOURLS click tracking in a future version (e.g. track user IP, click counts, redirect time, and more)
 
-<ul>
-<li>Browse more YOURS plugins <a href="https://github.com/YOURLS/YOURLS/wiki/Plugin-List" target="_blank">here</a></li>
-</ul>
+* I've used `pre_redirect` hook to track every click.
+* Again: Please use Universal Analytics GA property. Only UA properties support the Measurement protocol.
 
-<h4>Version 1.1</h4>
-Now, Real Time visitor location track-able.
-There was no way to pass the end-user's IP or Geolocation (derived by GA from IP) to  the measurement protocol when I started to develop this plugin.
+##### Note #####
+If you see "Missing Tracking Code" notifications in Google Analytics for your YOURLS property, you can ignore this message.
 
+* Keep in touch with me on Twitter @[powerthazan](https://twitter.com/powerthazan)
+* Browse more YOURLS plugins [here](https://github.com/YOURLS/YOURLS/wiki/Plugin-List)
 
-Now Google Add uip paramater for IP Override. It is helping to determine user location from GA End point. The source of the traffic arriving to the short url domain is now availble in Reports.
+#### Version 1.1 ####
+Now, Real Time visitor location is trackable.
+There was no way to pass the end-user's IP or Geolocation (derived by GA from IP) to the measurement protocol when I started to develop this plugin.
+
+Now Google added `uip` paramater for IP Override. It helps to determine user location from GA endpoint. The source of the traffic arriving to the short URL domain is now available in Reports.
