@@ -37,7 +37,7 @@ function file_get_contents_curl($url) {
 // Handle the parsing of the _ga cookie or setting it to a unique identifier
   function power_ga_mp_gaParseCookie() {
   if (isset($_COOKIE['_ga'])) {
-    list($version,$domainDepth, $cid1, $cid2) = split('[\.]', $_COOKIE["_ga"],4);
+    list($version,$domainDepth, $cid1, $cid2) = explode('[\.]', $_COOKIE["_ga"],4);
     $contents = array('version' => $version, 'domainDepth' => $domainDepth, 'cid' => $cid1.'.'.$cid2);
     $cid = $contents['cid'];
   }
